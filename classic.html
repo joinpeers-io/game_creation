@@ -3,15 +3,18 @@
         <script type="module" src="js/index.js"></script>
     </head>
     <body>
+        <div>auth-token: <input id="authToken"></div> <button onclick="punchKey()">Use Key</button>
+        <div> Current user : <div id = "userDetails"></div></div>
+        ---
         <h1>Classic</h1>
         ---
         <div>openDate: <input id="openDate"></div>
         <div>closeDate: <input id="closeDate"></div>
         <div>endDate: <input id="endDate"></div>
         <div>winCategory: 
-            <select id="winCategory">
-                <option>winner</option>
-                <option>loser</option>
+            <select id="color">
+                <option>Red</option>
+                <option>Green</option>
             </select>
         </div>
         <div>fee: <input id="fee"></div>
@@ -28,6 +31,7 @@
         <button onclick="generate()">Create</button>
         ---
         <pre id="code"></pre>
+        <div id="status"></div>
     </body>
 </html>
 
